@@ -2,6 +2,10 @@
   "name": "express-server",
   "version": "1.0.0",
   "description": "Simple Express server.",
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/mocon/express-demo.git"
+  },
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
