@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Simple Express server.",
   "engines": {
-	  "node": "4.2.2",
-	  "npm": "2.14.7"
+    "node": "4.2.2",
+    "npm": "2.14.7"
   },
   "repository": {
-	  "type": "git",
-	  "url": "https://github.com/mocon/express-demo.git"
+    "type": "git",
+    "url": "https://github.com/mocon/express-demo.git"
   },
   "main": "app.js",
   "scripts": {
@@ -21,5 +21,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
   }
 }
