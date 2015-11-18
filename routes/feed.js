@@ -12,7 +12,7 @@ router.route('/')
     if (randomNumber === 0 || randomNumber === 3 || randomNumber === 6){
       res.json({});
     } else {
-      res.json({'has feed': true, 'pollen_index': randomNumber});
+      res.json({'pollen_index': randomNumber});
     };
     
   });
