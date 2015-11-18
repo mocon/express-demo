@@ -1,10 +1,11 @@
 var express = require('express'),
+		cors = require('cors'),
     router = express.Router(),
     bodyParser = require('body-parser'),
     parseUrlEncoded = bodyParser.urlencoded({extended: false});
 
 router.route('/')
-  .get(function(req, res){
+  .get(cors(), function(req, res){
     var listOfProducts = {"products": [
 	    {
 	      "name": "Toothbrush",
