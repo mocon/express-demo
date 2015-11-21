@@ -1,14 +1,12 @@
 var express = require('express'),
     app = express(),
-    products = require('./routes/products'),
-    feed = require('./routes/feed');
+    products = require('./routes/products');
 
 app.route('/').get(function(req, res){
   res.redirect(301, '/products');
 });
 
 app.use('/products', products);
-app.use('/feed', feed);
 
 var server = app.listen(process.env.PORT || 3000, function(){
   var port = server.address().port,
