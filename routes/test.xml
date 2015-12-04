@@ -1,0 +1,37 @@
+<VAST version="2.0">
+  <Ad id="125">
+    <InLine>
+    <AdSystem>AdvertSERVE</AdSystem>
+    <AdTitle><![CDATA[ Blog: Overlay Banner ]]></AdTitle>
+    <Description><![CDATA[ Blog: Overlay Banner ]]></Description>
+    <Creatives>
+      <Creative AdID="125">
+        <NonLinearAds>
+          <NonLinear width="640" height="120" minSuggestedDuration="00:00:15">
+            <HTMLResource>
+              <![CDATA[
+              <div id="mGGUID" align="left" style="_CLEARCSS_;cursor:pointer;height:120px;overflow:hidden;"><img id="imGGUID" src="//c.gumgum.com/images/pixel.gif?GGUID" onload='(function(e){
+                var req = new XMLHttpRequest(),
+                    url = "https://boiling-oasis-4008.herokuapp.com/vast",
+                    ele = document.getElementById("mGGUID"),
+                    dat = "";
+                req.onreadystatechange = function(){
+                  if (req.readyState == 4 && req.status == 200){
+                    dat = JSON.parse(req.responseText);
+                    ele.innerHTML = dat.markup;
+                  }
+                }
+                req.open("GET", url, true);
+                req.send();
+                e.onload = false;
+                return false;
+              })(this)' /></div>
+              ]]>
+            </HTMLResource>
+          </NonLinear>
+        </NonLinearAds>
+      </Creative>
+    </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
